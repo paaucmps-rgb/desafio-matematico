@@ -1,0 +1,233 @@
+/* ==========================================
+   DISEÑO GENERAL
+   ========================================== */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf4f4;
+    margin: 0;
+    padding: 20px;
+    color: #222;
+}
+
+
+/* ==========================================
+   CONTENEDOR PRINCIPAL
+   ========================================== */
+
+.contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* ==========================================
+   TÍTULO
+   ========================================== */
+
+h1 {
+    font-size: 46px;
+    margin-bottom: 10px;
+}
+
+
+/* ==========================================
+   TEXTO INTRODUCTORIO
+   ========================================== */
+
+.introduccion {
+    font-size: 26px;
+    margin-bottom: 35px;
+}
+
+
+/* ==========================================
+   MENÚ DE JUEGOS
+   ========================================== */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* ==========================================
+   BOTONES PRINCIPALES
+   ========================================== */
+
+.menu button {
+    font-size: 23px;
+    font-weight: bold;
+    padding: 25px;
+    min-width: 220px;
+    min-height: 130px;
+
+    border: 3px solid #222;
+    border-radius: 18px;
+
+    background-color: white;
+
+    cursor: pointer;
+
+    transition: transform 0.2s;
+}
+
+
+/* Efecto al pasar el ratón */
+
+.menu button:hover {
+    transform: scale(1.05);
+}
+
+
+/* ==========================================
+   ZONA DEL JUEGO
+   ========================================== */
+
+.juego {
+    margin-top: 40px;
+    padding: 40px;
+
+    background-color: white;
+
+    border: 3px solid #222;
+    border-radius: 20px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ==========================================
+   TÍTULOS DEL JUEGO
+   ========================================== */
+
+.juego h2 {
+    font-size: 34px;
+}
+
+
+/* ==========================================
+   TEXTO DEL JUEGO
+   ========================================== */
+
+.juego p {
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   BOTONES DE RESPUESTA
+   ========================================== */
+
+.respuesta {
+    font-size: 28px;
+    font-weight: bold;
+
+    padding: 18px 35px;
+    margin: 10px;
+
+    border: 3px solid #222;
+    border-radius: 14px;
+
+    background-color: #ffffff;
+
+    cursor: pointer;
+
+    transition: transform 0.2s;
+}
+
+
+/* Efecto al pasar el ratón */
+
+.respuesta:hover {
+    transform: scale(1.07);
+}
+
+
+/* ==========================================
+   PUNTUACIÓN
+   ========================================== */
+
+.puntuacion {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+
+/* ==========================================
+   BOTÓN VOLVER
+   ========================================== */
+
+.volver {
+    font-size: 23px;
+    font-weight: bold;
+
+    padding: 15px 30px;
+    margin-top: 25px;
+
+    border: 2px solid #222;
+    border-radius: 12px;
+
+    background-color: #f1f1f1;
+
+    cursor: pointer;
+}
+
+
+/* ==========================================
+   LÍNEA SEPARADORA
+   ========================================== */
+
+hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 2px solid #cccccc;
+}
+
+
+/* ==========================================
+   ADAPTACIÓN PARA MÓVILES
+   ========================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .introduccion {
+        font-size: 21px;
+    }
+
+    .menu button {
+        width: 100%;
+        font-size: 21px;
+    }
+
+    .juego {
+        padding: 25px 15px;
+    }
+
+    .juego h2 {
+        font-size: 28px;
+    }
+
+    .juego p {
+        font-size: 22px;
+    }
+
+    .respuesta {
+        font-size: 24px;
+        width: 90%;
+    }
+
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Matemático</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>🧠 Desafío Matemático</h1>
+
+        <p class="introduccion">
+            Elige una actividad para comenzar
+        </p>
+
+        <div class="menu">
+
+            <button onclick="mostrarJuego('calculo')">
+                ➕<br>
+                Cálculo rápido
+            </button>
+
+            <button onclick="mostrarJuego('anterior')">
+                🔢<br>
+                Anterior y posterior
+            </button>
+
+            <button onclick="mostrarJuego('mayor')">
+                ⚖️<br>
+                Mayor o menor
+            </button>
+
+        </div>
+
+        <div id="juego" class="juego">
+
+            <h2>¡Elige una actividad!</h2>
+
+            <p>
+                Pulsa uno de los botones para comenzar.
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
